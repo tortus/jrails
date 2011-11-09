@@ -239,6 +239,10 @@ module ActionView
         @id = id
         super(generator, "#{JQUERY_VAR}(\"#{id}\")")
       end
+
+      def assign(variable, value)
+        append_to_function_chain!("attr('#{variable}', #{@generator.send(:javascript_object_for, value)})")
+      end
       
       def replace_html(*options_for_render)
         call 'html', @generator.send(:render, *options_for_render)
