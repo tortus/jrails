@@ -1,3 +1,10 @@
+require 'jrails/engine'
+
+# OLD init code replicated here for reference:
+# ActionView::Helpers::AssetTagHelper::JAVASCRIPT_DEFAULT_SOURCES = ['jquery','jquery-ui','jrails']
+# ActionView::Helpers::AssetTagHelper::reset_javascript_include_default
+# require 'jquery_selector_assertions' if Rails.env.test?
+
 module ActionView
   module Helpers
     
