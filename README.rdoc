@@ -2,17 +2,26 @@
 
 jRails is a drop-in jQuery replacement for the Rails Prototype/script.aculo.us helpers.
 
+While these helpers have been, and always will be, a terrible idea, this
+version allows code that depends on them to work in Rails 4.
+
 == Resources
 
-Install
+=== Install
 
-* .script/plugin install git://github.com/aaronchi/jrails.git
+Gemfile:
 
-Project Site
+    gem 'jrails', git: 'https://github.com/tortustechnologies/jrails.git'
 
-* http://code.google.com/p/ennerchi
+application.js:
 
-Web Site
+    //= require jrails/jrails
+
+=== Homepage of this fork
+
+* https://github.com/tortustechnologies/jrails.git
+
+=== Original author site
 
 * http://www.ennerchi.com/projects/jrails
 

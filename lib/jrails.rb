@@ -1,4 +1,5 @@
 require 'jrails/engine'
+require 'action_view'
 
 # OLD init code replicated here for reference:
 # ActionView::Helpers::AssetTagHelper::JAVASCRIPT_DEFAULT_SOURCES = ['jquery','jquery-ui','jrails']
